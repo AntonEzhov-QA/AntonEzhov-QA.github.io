@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: url(https://funart.pro/uploads/posts/2020-04/1587306633_48-p-belie-foni-dlya-saitov-119.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 10px 0;
+
+}
+
+.container {
+  width: 300px;
+  min-height: 300px;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+ /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#FFD700;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
+
+ /* Свойства фотографии*/
+.photo {
+  margin: 0 auto;
+  border-radius: 200px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 5px solid #616362;
+}
